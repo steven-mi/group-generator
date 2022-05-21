@@ -4,8 +4,9 @@ A web application to split your list of items in random subgroups.
 
 **Technology Stack**
 
-- [ReactJS Frontend](https://reactjs.org/)
-- [TailWindCSS](https://tailwindcss.com/)
+- [React](https://reactjs.org/)
+- [Tailwind](https://tailwindcss.com/)
+- [Storybook](https://storybook.js.org/)
 
 ## Getting Started
 
@@ -18,6 +19,18 @@ npm install
 
 ```
 npm start
+```
+
+**Start tailwind viewer**
+
+```
+npm run tailwind
+```
+
+**Start storybook**
+
+```
+npm run storybook
 ```
 
 ## License
