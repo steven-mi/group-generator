@@ -3,12 +3,12 @@ import * as React from 'react';
 export const UsageInstruction: React.FC = () => {
     return (
         <>
-            <p className="text font-bold text-gray-900">
+            <p className="text font-bold text-gray-900 text-xl">
                 How to use the generator
             </p>
             <p>
                 Enter each item in a new row, select the number of groups and click the button
-                to create your randomized group list. If you do not like the first team, then
+                to create your randomized subgroups. If you do not like the first team, then
                 click again until you like it.
             </p>
             <p>

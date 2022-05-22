@@ -52,7 +52,9 @@ export const DottedBackground: React.FC<DottedBackgroundProps> = (props) => {
                 </defs>
                 <rect width="404" height="384" fill="url(#7a00fe67-0343-4a3c-8e81-c145097a3ce0)"/>
             </svg>
-            {props.children}
+            <div className="relative md:bg-white md:p-6 rounded-lg">
+                {props.children}
+            </div>
         </div>
 
     );

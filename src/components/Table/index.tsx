@@ -25,7 +25,7 @@ export const Table: React.FC<TableProps> = (props) => {
                                 <tbody className="divide-y divide-gray-200 bg-white">
                                 <tr>
                                     <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-                                        {props.entries.toString()}
+                                        {props.entries.join(", ")}
                                     </td>
                                 </tr>
                                 </tbody>

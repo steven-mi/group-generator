@@ -2,6 +2,8 @@
 
 A web application to split your list of items in random subgroups.
 
+![](.github/img.png)
+
 ## Getting Started
 
 Install dependencies
