@@ -1,11 +1,11 @@
 import React from 'react';
-import TextArea from ".";
+import {TextArea} from ".";
 
 export default {
-  component: TextArea,
-  title: 'TextArea',
+    component: TextArea,
+    title: 'TextArea',
 };
 
-export function Default() {
-  return <TextArea />;
+export const Default = () => {
+    return <TextArea/>;
 }

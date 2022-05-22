@@ -1,11 +1,11 @@
 import React from 'react';
-import Background from '.';
+import {Background} from '.';
 
 export default {
-  component: Background,
-  title: 'Background',
+    component: Background,
+    title: 'Background',
 };
 
-export function Default() {
-  return <Background children={<p>content</p>} />;
+export const Default = () => {
+    return <Background children={<p>content</p>}/>;
 }

@@ -1,11 +1,11 @@
 import React from 'react';
-import TextHeader from ".";
+import {TextHeader} from ".";
 
 export default {
-  component: TextHeader,
-  title: 'TextHeader',
+    component: TextHeader,
+    title: 'TextHeader',
 };
 
-export function Default() {
-  return <TextHeader />;
+export const Default = () => {
+    return <TextHeader/>;
 }

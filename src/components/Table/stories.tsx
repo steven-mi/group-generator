@@ -1,11 +1,11 @@
 import React from 'react';
-import Table from '.';
+import {Table} from '.';
 
 export default {
-  component: Table,
-  title: 'Table',
+    component: Table,
+    title: 'Table',
 };
 
-export function Default() {
-  return <Table entries={['Test', 'Test1', 'Test2']} />;
+export const Default = () => {
+    return <Table entries={['Test', 'Test1', 'Test2']}/>;
 }

@@ -2,15 +2,10 @@
 
 A web application to split your list of items in random subgroups.
 
-**Technology Stack**
-
-- [React](https://reactjs.org/)
-- [Tailwind](https://tailwindcss.com/)
-- [Storybook](https://storybook.js.org/)
-
 ## Getting Started
 
 Install dependencies
+
 ```bash
 npm install
 ```

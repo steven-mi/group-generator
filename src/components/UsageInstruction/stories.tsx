@@ -1,11 +1,11 @@
 import React from 'react';
-import UsageInstruction from ".";
+import {UsageInstruction} from ".";
 
 export default {
-  component: UsageInstruction,
-  title: 'UsageInstruction',
+    component: UsageInstruction,
+    title: 'UsageInstruction',
 };
 
-export function Default() {
-  return <UsageInstruction />;
+export const Default = () => {
+    return <UsageInstruction/>;
 }
