@@ -7,5 +7,5 @@ export default {
 };
 
 export const Default = () => {
-    return <DottedBackground children={<p>content</p>}/>;
+    return <DottedBackground children={<p>content</p>} />;
 }

@@ -1,6 +1,7 @@
 import * as React from 'react';
 
 interface TableProps {
+    title: string
     entries: string[]
 }
 
@@ -18,7 +19,7 @@ export const Table: React.FC<TableProps> = (props) => {
                                         scope="col"
                                         className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6"
                                     >
-                                        Name
+                                        {props.title}
                                     </th>
                                 </tr>
                                 </thead>

@@ -8,5 +8,6 @@ export default {
 
 export const Default = () => {
     return <GeneratorForm
-        default={["Steven", "Felix", "Johannes", "Anna", "Jonas", "Steve", "Florian", "Marc", "Nico", "Ron"]}/>;
+        default={["Steven", "Felix", "Johannes", "Anna", "Jonas", "Steve", "Florian", "Marc", "Nico", "Ron"]}
+        onClick={() => (console.log("hi"))}/>;
 }

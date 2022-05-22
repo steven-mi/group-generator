@@ -7,5 +7,5 @@ export default {
 };
 
 export const Default = () => {
-    return <Table entries={['Test', 'Test1', 'Test2']}/>;
+    return <Table entries={['Test', 'Test1', 'Test2']} title={"Test"}/>;
 }
