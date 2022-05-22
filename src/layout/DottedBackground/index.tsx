@@ -1,11 +1,11 @@
 import * as React from 'react';
 import {ReactNode} from 'react';
 
-interface BackgroundProps {
+interface DottedBackgroundProps {
     children: ReactNode
 }
 
-export const Background: React.FC<BackgroundProps> = (props) => {
+export const DottedBackground: React.FC<DottedBackgroundProps> = (props) => {
     return (
         <div className="relative">
             <svg
