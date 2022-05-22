@@ -25,7 +25,7 @@ export function HomePage() {
                         </div>
                     </div>
                     <div className="mt-12 border-t border-gray-200 pt-8">
-                        <p className="text font-bold text-gray-900">
+                        <p className="font-bold text-gray-900 text-xl">
                             Generated {groups.length} groups
                         </p>
                         <div className="lg:grid lg:grid-cols-2">
