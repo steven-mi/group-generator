@@ -9,25 +9,25 @@ A web application to split your list of items in random subgroups.
 Install dependencies
 
 ```bash
-npm install
+yarn install
 ```
 
 **Start application**
 
 ```
-npm start
+yarn start
 ```
 
 **Start tailwind viewer**
 
 ```
-npm run tailwind
+yarn run tailwind
 ```
 
 **Start storybook**
 
 ```
-npm run storybook
+yarn run storybook
 ```
 
 ## License

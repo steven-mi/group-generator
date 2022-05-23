@@ -14,11 +14,11 @@ jobs:
         with:
           node-version: '14'
       - name: Install landing page dependencies
-        run: npm install
+        run: yarn install
       - name: Create production-ready build files
         env:
           CI: false
-        run: npm run build
+        run: yarn run build
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
