@@ -20,7 +20,7 @@ export function HomePage() {
                         <div className="text-gray-500">
                             <GeneratorForm default={defaultGroups} onClick={setGroups}/>
                         </div>
-                        <div className="prose prose-indigo prose-lg text-gray-500">
+                        <div className="sm:invisible prose prose-indigo prose-lg text-gray-500">
                             <UsageInstruction/>
                         </div>
                     </div>
