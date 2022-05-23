@@ -1,15 +1,15 @@
 import * as React from 'react';
 import {DottedBackground} from '../../layout/DottedBackground';
 import {TextHeader} from '../../components/TextHeader';
-import {GeneratorForm} from '../../components/GeneratorForm';
+import {generateSubGroups, GeneratorForm} from '../../components/GeneratorForm';
 import {Table} from '../../components/Table';
 import {UsageInstruction} from '../../components/UsageInstruction';
-
 
 export function HomePage() {
 
     const defaultGroups = ["Steven", "Felix", "Johannes", "Anna", "Jonas", "Steve"]
-    const [groups, setGroups] = React.useState([]);
+    const defaultNumber = 2
+    const [groups, setGroups] = React.useState(generateSubGroups(defaultGroups, defaultNumber));
 
     return (
         <div className="pt-4 px-4 bg-white overflow-hidden">
@@ -18,7 +18,8 @@ export function HomePage() {
                 <DottedBackground>
                     <div className="lg:grid lg:grid-cols-2 lg:gap-6">
                         <div className="text-gray-500">
-                            <GeneratorForm default={defaultGroups} onClick={setGroups}/>
+                            <GeneratorForm defaultItems={defaultGroups} onClick={setGroups}
+                                           defaultNumber={defaultNumber}/>
                         </div>
                         <div className="sm:invisible prose prose-indigo prose-lg text-gray-500">
                             <UsageInstruction/>

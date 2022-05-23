@@ -1,7 +1,8 @@
 import * as React from 'react';
 
 interface GeneratorFormProps {
-    default: string[]
+    defaultItems: string[]
+    defaultNumber: number
     onClick: (subGroups: any) => void;
 }
 
@@ -21,7 +22,7 @@ function shuffleArray(arr: any[]) {
     return arr.sort((a, b) => 0.5 - Math.random())
 }
 
-function generateSubGroups(groups: string[], numSubGroups: number) {
+export function generateSubGroups(groups: string[], numSubGroups: number) {
     const shuffledGroups = shuffleArray(groups);
     return chunkArray(shuffledGroups, numSubGroups)
 }
@@ -29,8 +30,8 @@ function generateSubGroups(groups: string[], numSubGroups: number) {
 
 export const GeneratorForm: React.FC<GeneratorFormProps> = (props: GeneratorFormProps) => {
 
-    const [groups, setGroups] = React.useState(props.default);
-    const [numGroups, setNumGroups] = React.useState(2)
+    const [groups, setGroups] = React.useState(props.defaultItems);
+    const [numGroups, setNumGroups] = React.useState(props.defaultNumber)
 
 
     return (
