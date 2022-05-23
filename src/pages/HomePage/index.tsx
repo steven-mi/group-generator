@@ -1,11 +1,32 @@
 import * as React from 'react';
 import {DottedBackground} from '../../layout/DottedBackground';
 import {TextHeader} from '../../components/TextHeader';
-import {generateSubGroups, GeneratorForm} from '../../components/GeneratorForm';
+import {GeneratorForm} from '../../components/GeneratorForm';
 import {Table} from '../../components/Table';
 import {UsageInstruction} from '../../components/UsageInstruction';
 
+
 export function HomePage() {
+    function chunkArray(arr: any[], chunkCount: number) {
+        const chunks = [];
+        while (arr.length) {
+            const chunkSize = Math.ceil(arr.length / chunkCount--);
+            const chunk = arr.slice(0, chunkSize);
+            chunks.push(chunk);
+            arr = arr.slice(chunkSize);
+        }
+        return chunks;
+    }
+
+    function shuffleArray(arr: any[]) {
+        return arr.sort((a, b) => 0.5 - Math.random())
+    }
+
+    function generateSubGroups(groups: string[], numSubGroups: number) {
+        const shuffledGroups = shuffleArray(groups);
+        return chunkArray(shuffledGroups, numSubGroups)
+    }
+
 
     const defaultGroups = ["Steven", "Felix", "Johannes", "Anna", "Jonas", "Steve"]
     const defaultNumber = 2
@@ -22,7 +43,7 @@ export function HomePage() {
                             <GeneratorForm defaultItems={defaultGroups} onClick={setGroups}
                                            defaultNumber={defaultNumber}/>
                         </div>
-                        <div className="sm:invisible visible prose prose-indigo prose-lg text-gray-500">
+                        <div className="visible sm:invisible prose prose-indigo prose-lg text-gray-500">
                             <UsageInstruction/>
                         </div>
                     </div>
