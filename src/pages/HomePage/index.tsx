@@ -43,7 +43,7 @@ export function HomePage() {
                             <GeneratorForm defaultItems={defaultGroups} onClick={setGroups}
                                            defaultNumber={defaultNumber}/>
                         </div>
-                        <div className="visible sm:invisible prose prose-indigo prose-lg text-gray-500">
+                        <div className="hidden md:block prose prose-indigo prose-lg text-gray-500">
                             <UsageInstruction/>
                         </div>
                     </div>
