@@ -9,7 +9,8 @@ export function HomePage() {
 
     const defaultGroups = ["Steven", "Felix", "Johannes", "Anna", "Jonas", "Steve"]
     const defaultNumber = 2
-    const [groups, setGroups] = React.useState(generateSubGroups(defaultGroups, defaultNumber));
+    const defaultShuffledArray = generateSubGroups(defaultGroups, defaultNumber)
+    const [groups, setGroups] = React.useState(defaultShuffledArray);
 
     return (
         <div className="pt-4 px-4 bg-white overflow-hidden">
