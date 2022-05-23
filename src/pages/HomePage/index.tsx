@@ -8,7 +8,7 @@ import {UsageInstruction} from '../../components/UsageInstruction';
 
 export function HomePage() {
 
-    const defaultGroups = ["Steven", "Felix", "Johannes", "Anna", "Jonas", "Steve", "Florian", "Marc", "Nico", "Ron"]
+    const defaultGroups = ["Steven", "Felix", "Johannes", "Anna", "Jonas", "Steve"]
     const [groups, setGroups] = React.useState([]);
 
     return (
