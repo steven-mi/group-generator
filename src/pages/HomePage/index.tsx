@@ -4,29 +4,10 @@ import {TextHeader} from '../../components/TextHeader';
 import {GeneratorForm} from '../../components/GeneratorForm';
 import {Table} from '../../components/Table';
 import {UsageInstruction} from '../../components/UsageInstruction';
+import {generateSubGroups} from "../../utils";
 
 
 export function HomePage() {
-    function chunkArray(arr: any[], chunkCount: number) {
-        const chunks = [];
-        while (arr.length) {
-            const chunkSize = Math.ceil(arr.length / chunkCount--);
-            const chunk = arr.slice(0, chunkSize);
-            chunks.push(chunk);
-            arr = arr.slice(chunkSize);
-        }
-        return chunks;
-    }
-
-    function shuffleArray(arr: any[]) {
-        return arr.sort((a, b) => 0.5 - Math.random())
-    }
-
-    function generateSubGroups(groups: string[], numSubGroups: number) {
-        const shuffledGroups = shuffleArray(groups);
-        return chunkArray(shuffledGroups, numSubGroups)
-    }
-
 
     const defaultGroups = ["Steven", "Felix", "Johannes", "Anna", "Jonas", "Steve"]
     const defaultNumber = 2
